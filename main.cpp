@@ -29,7 +29,7 @@ int main() {
                 printText(text);
                 break;
             case 3:
-                printf("Dlugosc tekstu: %d\n", textLength(text));
+                printf("Dlugosc qtekstu: %d\n", textLength(text));
                 break;
             default:
                 printf("Wybierz inną opcje.\n");
