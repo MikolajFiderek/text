@@ -4,7 +4,9 @@
 void enterText(char *text);
 void printText(const char *text);
 int textLength(const char *text);
-void clear(void);
 void toUpperCase(char *text);
+void toLowerCase(char *text);
+void clear(void);
+
 
 #endif // TEXT_H

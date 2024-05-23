@@ -6,6 +6,7 @@ void menu() {
     printf("2. Wyswietl tekst\n");
     printf("3. Dlugosc tekstu\n");
     printf("4. Zamien na wielkie litery\n");
+    printf("5. Zamien na male litery\n");
     printf("0. EXIT\n");
     printf("Wybierz opcje:\n");
 }
@@ -34,6 +35,9 @@ int main() {
                 break;
             case 4:
                 toUpperCase(text);
+                break;
+            case 5:
+                toLowerCase(text);
                 break;
             default:
                 printf("Wybierz inną opcje.\n");
