@@ -27,3 +27,10 @@ int textLength(const char *text) {
 void clear(void) {
     while (getchar() != '\n');
 }
+
+void toUpperCase(char *text) {
+    for (int i = 0; text[i] != '\0'; i++) {
+        text[i] = toupper((unsigned char) text[i]);
+    }
+    printf("Tekst w wielkich literach: %s\n", text);
+}
