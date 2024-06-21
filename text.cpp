@@ -25,15 +25,20 @@ int textLength(const char *text) {
 }
 
 void toUpperCase(char *text) {
-    for (int i = 0; text[i] != '\0'; i++) {
-        text[i] = toupper((unsigned char) text[i]);
+    for (char *ptr = text; *ptr; ++ptr) {
+        if (*ptr >= 'a' && *ptr <= 'z') {
+            *ptr = *ptr - ('a' - 'A');
+        }
     }
     printf("Tekst w wielkich literach: %s\n", text);
 }
 
+
 void toLowerCase(char *text) {
-    for (int i = 0; text[i] != '\0'; i++) {
-        text[i] = tolower((unsigned char) text[i]);
+    for (char *ptr = text; *ptr; ++ptr) {
+        if (*ptr >= 'A' && *ptr <= 'Z') {
+            *ptr = *ptr + ('a' - 'A');
+        }
     }
     printf("Tekst w malych literach: %s\n", text);
 }
